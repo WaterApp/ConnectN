@@ -1,0 +1,5 @@
+D:\Concert_Care\POC\HL7Extraction\HL7.Model\bin\Debug\HL7.Model.dll
+D:\Concert_Care\POC\HL7Extraction\HL7.Model\bin\Debug\HL7.Model.pdb
+D:\Concert_Care\POC\HL7Extraction\HL7.Model\obj\Debug\HL7.Model.dll
+D:\Concert_Care\POC\HL7Extraction\HL7.Model\obj\Debug\HL7.Model.pdb
+D:\Concert_Care\POC\HL7Extraction\HL7.Model\obj\Debug\HL7.Model.csprojResolveAssemblyReference.cache
