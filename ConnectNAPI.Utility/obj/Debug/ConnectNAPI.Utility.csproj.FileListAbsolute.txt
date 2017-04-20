@@ -1,0 +1,11 @@
+D:\Connect N\SourceCode\ConnectNAPI.Utility\obj\Debug\ConnectNAPI.Utility.csprojResolveAssemblyReference.cache
+D:\Connect N\SourceCode\ConnectNAPI.Utility\bin\Debug\ConnectNAPI.Utility.dll
+D:\Connect N\SourceCode\ConnectNAPI.Utility\bin\Debug\ConnectNAPI.Utility.pdb
+D:\Connect N\SourceCode\ConnectNAPI.Utility\bin\Debug\ConnectNAPI.DataModel.dll
+D:\Connect N\SourceCode\ConnectNAPI.Utility\bin\Debug\NHapi.Base.dll
+D:\Connect N\SourceCode\ConnectNAPI.Utility\bin\Debug\NHapi.Model.V251.dll
+D:\Connect N\SourceCode\ConnectNAPI.Utility\bin\Debug\ConnectNAPI.DataModel.pdb
+D:\Connect N\SourceCode\ConnectNAPI.Utility\bin\Debug\NHapi.Base.xml
+D:\Connect N\SourceCode\ConnectNAPI.Utility\bin\Debug\NHapi.Model.V251.xml
+D:\Connect N\SourceCode\ConnectNAPI.Utility\obj\Debug\ConnectNAPI.Utility.dll
+D:\Connect N\SourceCode\ConnectNAPI.Utility\obj\Debug\ConnectNAPI.Utility.pdb
