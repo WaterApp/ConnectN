@@ -20,3 +20,6 @@ D:\Connect N\SourceCode\ConnectN\ConnectNAPI.Extraction\obj\Debug\ConnectNAPI.Ex
 D:\Connect N\SourceCode\ConnectNWeb\ConnectNAPI.Extraction\bin\Debug\ConnectNAPI.Extraction.exe.config
 D:\Connect N\SourceCode\ConnectNWeb\ConnectNAPI.Extraction\obj\Debug\ConnectNAPI.Extraction.exe
 D:\Connect N\SourceCode\ConnectNWeb\ConnectNAPI.Extraction\obj\Debug\ConnectNAPI.Extraction.pdb
+D:\Push Project\ConnectN\ConnectNAPI.Extraction\bin\Debug\ConnectNAPI.Extraction.exe.config
+D:\Push Project\ConnectN\ConnectNAPI.Extraction\obj\Debug\ConnectNAPI.Extraction.exe
+D:\Push Project\ConnectN\ConnectNAPI.Extraction\obj\Debug\ConnectNAPI.Extraction.pdb
