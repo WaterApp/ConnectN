@@ -1,0 +1,124 @@
+﻿@{
+    ViewBag.Title = "MapWardCheckListData";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div id="sidebar"></div>
+<!-- sidebar -->
+<div class="main-content">
+    <div class="">
+        <div class="col-sm-12">
+            <div class="page-header">
+                <h3 class="page-title">Checklist Ward Mapping</h3>
+
+            </div>
+            <!-- page-header -->
+        </div>
+        <!-- col -->
+    </div>
+    <!-- row -->
+
+    <div class="checklist">
+        <div class="col-sm-12">
+            <div class="tabs">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist" data-bind="foreach: CheckListName">
+                    <li role="presentation"><a href="#vital-sign" aria-controls="vital-sign" role="tab" data-toggle="tab" data-bind="text:name,click:$parent.checkListChosen"></a></li>
+
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div>
+                        <label class="col-sm-2 control-label">Ward </label>
+                        <select data-bind="foreach:wardData,optionscaption: choose,value:ward,event:{ change: wardChange}">
+                            <!-- ko if: $index() === 0 -->
+                            <option value="0">Select </option>
+                            <!-- /ko -->
+                            <option data-bind="text: key,value:name, option: $data"></option>
+                        </select>
+                    </div>
+                    <div style="color:red;margin-left:50px;" data-bind="text:formmessage,style : { visibility :formmessageVisible()===false?'hidden':''}"></div>
+                    @*<select data-bind="options:wardData,optionsCaption: 'Choose',value:ward" class="form-control"></select>*@
+                    <div role="tabpanel" class="tab-pane" id="vital-sign">
+                        <span class="pull-left">
+                            <h3 data-bind="text:tabName"></h3>
+                        </span>
+                        <button type="button" class="btn btn-primary pull-right mar-T-15" data-toggle="modal" data-bind="event:{click:AddUpdateWardMapping}" data-target="#create-control">
+                            Submit
+                        </button>
+
+                        <div class="clear"></div>
+                        <hr>
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Lable Name</th>
+                                        <th>Control</th>
+                                        @*<th>Options</th>*@
+                                        @*<th>Status</th>*@
+                                        <th>Add to Ward</th>
+                                    </tr>
+                                </thead>
+                                <tbody data-bind="foreach: checkListData">
+                                    <tr>
+                                        <td data-bind="text:CheckListItemName"></td>
+                                        @*<td data-bind="text:ChecklistType"></td>*@
+                                        <td>
+                                            <!-- ko if: ControlType.toLowerCase() ==='textbox'  -->
+                                            <input type="text" class="f" placeholder="">
+                                            <!-- /ko -->
+                                            <!-- ko if: ControlType.toLowerCase() ==='selectbox'  -->
+                                            <select data-bind="foreach:Options,optionsCaption: Choose">
+                                                <option data-bind="text: CheckListOptionsValue, option: $data"></option>
+                                            </select>
+                                            <!-- /ko -->
+                                            <!-- ko if: ControlType.toLowerCase() ==='radiobutton'  -->
+                                            <span data-bind="foreach: Options">
+                                                <input type="radio" data-bind="attr: { name:$parent.CheckListItemName,id:CheckListOptionsID }" />
+                                                <label data-bind="text:CheckListOptionsValue,attr: { for:CheckListOptionsID }"></label>
+
+                                            </span>
+                                            <!-- /ko -->
+                                            <!-- ko if: ControlType.toLowerCase() ==='checkbox'  -->
+                                            <span data-bind="foreach: Options">
+                                                <input type="checkbox" data-bind="attr: {id:CheckListOptionsID }" />
+                                                <label data-bind="text:CheckListOptionsValue,attr: { for:CheckListOptionsID }"></label>
+
+                                            </span>
+                                            <!-- /ko -->
+                                            <!-- ko if: ControlType.toLowerCase() ==='button'  -->
+                                            <span data-bind="foreach: Options">
+                                                <input type="button" data-bind="value:CheckListOptionsValue" class="btn btn-primary mar-T-5" />
+                                            </span>
+                                            <!-- /ko -->
+                                        </td>
+                                        @*<td>
+                                                <span data-bind="foreach: Options">
+                                                    <span class="input-group-addon options-Span" data-bind="text:CheckListOptionsValue"></span>
+                                                </span>
+                                            </td>*@
+                                        @*<td data-bind="text:IsActive"></td>*@
+                                        <td>
+
+                                            <input type="checkbox" data-bind="checked:IsActive" placeholder="form name">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- col -->
+    </div>
+</div>
+@section scripts {
+    <script type="text/javascript" src="~/Scripts/ApplicationScript/MapWardCheckListData.js"></script>
+}
+
+
+
+

@@ -1,0 +1,206 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "ConfigureCheckListData";
+}
+<div id="sidebar"></div>
+<!-- sidebar -->
+<div class="main-content">
+    <div class="">
+        <div class="col-sm-12">
+            <div class="page-header">
+                <h3  class="page-title">Checklist</h3>
+                
+            </div>
+            <!-- page-header -->
+        </div>
+        <!-- col -->
+    </div>
+    <!-- row -->
+
+    <div class="checklist">
+        <div class="col-sm-12">
+            <div class="tabs">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist" data-bind="foreach: CheckListName">
+                    <!-- ko if: $index() === 0 -->
+                    <li class="add-btn"> <a href="#add-form" id="addFormAnc" data-bind="click:$parent.OpenAddForm" aria-controls="add-form" role="tab" data-toggle="tab">+ Add Form</a></li>
+                    <!-- /ko -->
+                    <li role="presentation"><a href="#vital-sign" aria-controls="vital-sign" role="tab" data-toggle="tab" data-bind="text:name,click:$parent.checkListChosen"></a></li>
+                    
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <span style="color:red;margin-left:50px;" data-bind="text:formmessage,visible:formmessageVisible"> </span>
+                    <div role="tabpanel" class="tab-pane active" id="add-form">
+                        <h3>Create New Form</h3>
+                        <hr>
+                        <div class="form-horizontal">
+                            <div class="form-group">
+                                <label class="col-sm-4 control-label">Form name</label>
+                                <div class="col-sm-5">
+                                    <input type="text" class="form-control" data-bind="value:formname" placeholder="form name">
+                                </div>
+                                <label class="col-sm-4 control-label">Active Status</label>
+                                <span class="col-sm-1">
+                                    <input type="checkbox" class="form-control" data-bind="checked:formstatus" placeholder="form name">
+                                </span>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-4 control-label"></label>
+                                <div class="col-sm-5">
+                                    <button data-bind="click:addForm" class="btn btn-primary">Submit</button>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="vital-sign">
+                        <span>
+                            <h3 class="pull-left" data-bind="text:tabName"></h3>
+                        </span>
+                        <span style="margin-left:20px;float:left">
+                            <i class="glyphicon glyphicon-edit icons" data-bind="click:EditCheckListType" href="#add-form" aria-controls="add-form" role="tab" data-toggle="tab"></i>
+                            <i data-bind="click:DeleteCheckListType" class="glyphicon glyphicon-trash icons"></i>
+                            </span>
+                        <button type="button" class="btn btn-primary pull-right mar-T-15" data-bind="click:OpenPopup" data-toggle="modal" data-target="#create-control">
+                            Add Control
+                        </button>
+                        <div class="modal fade" id="create-control" tabindex="-1" role="dialog" aria-labelledby="create-controlLabel">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="create-controlLabel" data-bind="text:tabName"></h4>
+                                        
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="form-horizontal">
+                                            <div class="form-group">
+                                                <label class="col-sm-4 control-label">Label Name</label>
+                                                <div class="col-sm-5">
+                                                    <input type="text" data-bind="value:LabelName,click:" class="form-control">
+                                                    <input type="hidden" data-bind="value:LabelID">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-4 control-label">Control</label>
+                                                <div class="col-sm-5">
+                                                    <select data-bind="options:Optionsdata,optionsCaption: 'Choose',value:SelectedOption,event:{ change: ControlTypeChange}" class="form-control"></select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-4 control-label">Is Active</label>
+                                                <div class="col-sm-5">
+                                                    <input type="checkbox" data-bind="checked:IsActive" class="form-control checkbox">
+                                                    
+                                                </div>
+                                            </div>
+                                            <div data-bind="visible:isVisible" class="form-group">
+                                                <label class="col-sm-4 control-label">Options</label>
+                                                <div  class="col-sm-5">
+                                                    <div class="" data-bind="foreach: OptionsAdded">
+                                                        <div class="input-group options-div">
+                                                            <input type="text" class="form-control" data-bind="value:CheckListOptionsValue" aria-label="...">
+                                                            <input type="hidden" class="form-control" data-bind="value:CheckListOptionsID" aria-label="...">
+                                                            <!--<span class="input-group-addon">
+        <i class="glyphicon glyphicon-edit"></i>
+        </span>-->
+                                                            <span class="input-group-addon">
+                                                                <i data-bind="click:$parent.removeOption" class="glyphicon glyphicon-trash icons"></i>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <button data-bind="click:AddNewOptions" class="btn btn-primary mar-T-5">Add Value</button>
+                                                </div>
+                                            </div>
+                                            @*<div class="form-group">
+                                                <label class="col-sm-4 control-label">Checkbox</label>
+                                                <div class="col-sm-5">
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon">
+                                                            <input type="checkbox" disabled aria-label="...">
+                                                        </span>
+                                                        <input type="text" class="form-control" value="yes" aria-label="...">
+                                                        <span class="input-group-addon">
+                                                            <i class="glyphicon glyphicon-trash"></i>
+                                                        </span>
+                                                    </div>
+                                                    <div class="input-group mar-T-5">
+                                                        <span class="input-group-addon">
+                                                            <input type="checkbox" disabled aria-label="...">
+                                                        </span>
+                                                        <input type="text" class="form-control" value="no" aria-label="...">
+                                                        <span class="input-group-addon">
+                                                            <i class="glyphicon glyphicon-trash"></i>
+                                                        </span>
+                                                    </div>
+                                                    <button class="btn btn-primary mar-T-5">Add checkbox</button>
+                                                </div>
+                                            </div>*@
+                                            @*<div class="form-group">
+                                                <label class="col-sm-4 control-label">Data Type</label>
+                                                <div class="col-sm-5">
+                                                    <select class="form-control">
+                                                        <option value="">select</option>
+                                                        <option value="">String</option>
+                                                        <option value="">Integer</option>
+                                                    </select>
+                                                </div>
+                                            </div>*@
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        <button type="button" data-bind="click:Save" class="btn btn-primary">Save changes</button>
+                                        <div style="color:red" data-bind="text:message,visible:messageVisible"> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                        <hr>
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Lable Name</th>
+                                        <th>Control</th>
+                                        <th>Options</th>
+                                        <th>Status</th>
+                                        <th>Edit/ Delete</th>
+                                    </tr>
+                                </thead>
+                                <tbody data-bind="foreach: checkListData">
+                                    <tr>
+                                        <td data-bind="text:CheckListItemName"></td>
+                                        @*<td data-bind="text:ChecklistType"></td>*@
+                                        <td data-bind="text:ControlType"></td>
+                                        <td>
+                                            <span data-bind="foreach: Options">
+                                                <span class="input-group-addon options-Span" data-bind="text:CheckListOptionsValue"></span>
+                                            </span>
+                                        </td>
+                                        <td data-bind="text:IsActive"></td>
+                                        <td>
+                                            @*<button type="button" class="btn btn-primary pull-right mar-T-15" data-bind="click:OpenPopup" data-toggle="modal" data-target="#create-control">
+                                                Add Control
+                                            </button>*@
+                                            <i class="glyphicon glyphicon-edit icons" data-bind="click:$parent.Edit" data-toggle="modal" data-target="#create-control"></i>
+                                            <i data-bind="click:$parent.DeleteCheckListData" class="glyphicon glyphicon-trash icons"></i>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- col -->
+    </div>
+</div>
+@section scripts {
+    <script type="text/javascript" src="~/Scripts/ApplicationScript/ConfigureCheckListData.js"></script>
+}

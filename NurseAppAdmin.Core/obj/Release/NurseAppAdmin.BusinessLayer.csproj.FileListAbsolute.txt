@@ -1,0 +1,11 @@
+C:\Users\HOME\Documents\GitHub\ConnectN\NurseAppAdmin.Core\bin\Release\NurseAppAdmin.BusinessLayer.dll
+C:\Users\HOME\Documents\GitHub\ConnectN\NurseAppAdmin.Core\bin\Release\NurseAppAdmin.BusinessLayer.pdb
+C:\Users\HOME\Documents\GitHub\ConnectN\NurseAppAdmin.Core\bin\Release\NurseAppAdmin.DataLayer.dll
+C:\Users\HOME\Documents\GitHub\ConnectN\NurseAppAdmin.Core\bin\Release\NurseAppAdmin.DataModel.dll
+C:\Users\HOME\Documents\GitHub\ConnectN\NurseAppAdmin.Core\bin\Release\NurseAppAdmin.Utility.dll
+C:\Users\HOME\Documents\GitHub\ConnectN\NurseAppAdmin.Core\bin\Release\NurseAppAdmin.DataLayer.pdb
+C:\Users\HOME\Documents\GitHub\ConnectN\NurseAppAdmin.Core\bin\Release\NurseAppAdmin.DataModel.pdb
+C:\Users\HOME\Documents\GitHub\ConnectN\NurseAppAdmin.Core\bin\Release\NurseAppAdmin.Utility.pdb
+C:\Users\HOME\Documents\GitHub\ConnectN\NurseAppAdmin.Core\obj\Release\NurseAppAdmin.BusinessLayer.csprojResolveAssemblyReference.cache
+C:\Users\HOME\Documents\GitHub\ConnectN\NurseAppAdmin.Core\obj\Release\NurseAppAdmin.BusinessLayer.dll
+C:\Users\HOME\Documents\GitHub\ConnectN\NurseAppAdmin.Core\obj\Release\NurseAppAdmin.BusinessLayer.pdb

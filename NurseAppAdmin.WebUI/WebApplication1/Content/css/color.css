@@ -1,0 +1,182 @@
+body{
+	color: #514d6a;
+	background-color: #fbfbfb;
+}
+a{
+	color: #144995;
+}
+a:hover{
+	color: #1fb2fe;
+}
+.login-box {
+    background: rgba(232, 230, 230, 0.8);
+}
+.btn-default {
+    color: #607d8b;
+    background-color: #f7f8f9;
+    border-color: #d8dfe2;
+}
+#top-profile img{
+	box-shadow: 0px 3px 10px 0 rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 3px 10px 0 rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0px 3px 10px 0 rgba(0, 0, 0, 0.15);
+    -ms-box-shadow: 0px 3px 10px 0 rgba(0, 0, 0, 0.15);
+}
+#sidebar {
+    background-color: #FFF;
+}
+.btn-primary, .progress-bar-info, .panel-blue, .panel-primary>.panel-heading, #sidebar ul li a.active:before, .pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover, .pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover, .fc-toolbar, .fc th, .badge.blue, .alert-info, .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover, .fc-event.event_blue {
+    color: #ffffff;
+    background-color: #144995;
+}
+.btn-primary, .panel-primary>.panel-heading, .pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+    border-color: #144995;
+}
+.progress-bar-success, .status.active, .panel-green, .panel-green > .panel-heading, .btn-success, .fc-event, .badge.green, .event_green {
+    color: white;
+    background-color: #8BC34A;
+}
+.btn-info {
+    color: #fff;
+    background-color: #5bc0de;
+    border-color: #46b8da;
+}
+.progress-bar-warning, .panel-yellow, .status.pending, .panel-yellow > .panel-heading, .btn-warning, .fc-unthemed .fc-today, .badge.yellow, .event_yellow {
+    color: white;
+    background-color: #fda44f;
+}
+.progress-bar-danger, .panel-red, .status.inactive, .panel-red > .panel-heading, .btn-danger, .badge.red, .event_red {
+    color: white;
+    background-color: #F44336;
+}
+.top-menu a{
+	color: #607d8b;
+}
+.line-search .input-group-btn .btn-default {
+    color: #607d8b;
+    background-color: transparent;
+    border-color: transparent;
+}
+#sidebar ul li:hover{
+	background-color: #f8f8f8;
+	border-color: #DDD;
+}
+#sidebar ul li.active{
+	border-color: #7394c3;
+	background-color: #f8f8f8;
+    color: #607D8B;
+}
+#sidebar ul li.active a{
+    color: #144995;
+}
+#header .input-group .form-control, .filter-search .input-group .form-control, .search-box .input-group .form-control{
+	background-color: transparent;
+}
+.form-control{
+    border: 1px solid #d8dfe2;
+}
+.case-footer h5{
+	color: #607d8b;
+}
+#sidebar ul li a{
+    color: #607D8B;
+}
+.page-title{
+    color: #959595;
+}
+.page-header{
+    border-bottom: 1px solid #e1eaef;
+}
+.hospital-name h4{
+    color: #ccc;
+}
+.hospital-detail{
+    background-color: #144995;
+}
+.hospital-detail .logo{
+    background-color: #ccc;
+}
+.profile-details h4{
+    color: #144995;
+}
+.box{
+    background: #FFF;
+}
+.white-collapse .panel-default>.panel-heading{
+    color: #555;
+    background-color: #FFF;
+    border-color: #555;
+    box-shadow: none;
+}
+ul.disc-list{
+    padding-left: 20px
+}
+.disc-list li{
+    list-style: disc;
+}
+.disc-list li a{
+    color: #333;
+}
+.disc-list li a:hover{
+    color: #999;
+}
+.manual-checkbox:after{
+    content: "\f096";
+    font: normal normal normal 14px/1 FontAwesome;
+}
+.checked-box .manual-checkbox:after{
+    content: "\f046";
+    font: normal normal normal 14px/1 FontAwesome;
+}
+.show-case {
+    background: #FFF;
+}
+thead{
+    background-color: #FAFAFB;
+}
+tbody{
+    background-color: #FFF;
+}
+#sidebar .dropdown-menu {
+    background-color: #f9f9f9;
+}
+#sidebar .dropdown.open{
+    border-color: #144995;
+    background-color: #f8f8f8;
+    color: #607D8B;
+}
+.profile{
+    background-color: #FFF;
+    border-left: 5px solid #e55820;
+}
+.black-layout{
+    background-color: rgba(0, 0, 0, 0.84);
+    color: #b9b6b6;
+}
+.profile:hover .black-layout{
+    box-shadow: 0px 0px 6px -2px #000;  
+}
+.profile-dp img {
+    box-shadow: 0px 0px 8px -2px #000;
+}
+.profile-details li {
+    color: #a7a7a9;
+}
+.profile {
+    background-color: #FFF;
+    border: 1px solid #e7e8e8;
+    box-shadow: 0px 0px 7px -4px #000;
+}
+span.qualification {
+    color: #969696;
+}
+.view-dp h5{
+    color: #144995;
+}
+#sidebar .sidebar-user ul li a{
+    color: #d4d4d4;
+}
+#sidebar .sidebar-user ul li a:hover, #sidebar .sidebar-user ul li:hover{
+    background-color: transparent;
+    color: #FFF;
+}

@@ -1,0 +1,11 @@
+D:\Concert_Care\POC\HL7Extraction\HL7.Utility\bin\Debug\HL7.Utility.dll
+D:\Concert_Care\POC\HL7Extraction\HL7.Utility\bin\Debug\HL7.Utility.pdb
+D:\Concert_Care\POC\HL7Extraction\HL7.Utility\obj\Debug\HL7.Utility.csprojResolveAssemblyReference.cache
+D:\Concert_Care\POC\HL7Extraction\HL7.Utility\obj\Debug\HL7.Utility.dll
+D:\Concert_Care\POC\HL7Extraction\HL7.Utility\obj\Debug\HL7.Utility.pdb
+D:\Concert_Care\POC\HL7Extraction\HL7.Utility\bin\Debug\HL7.DataModel.dll
+D:\Concert_Care\POC\HL7Extraction\HL7.Utility\bin\Debug\NHapi.Base.dll
+D:\Concert_Care\POC\HL7Extraction\HL7.Utility\bin\Debug\HL7.DataModel.pdb
+D:\Concert_Care\POC\HL7Extraction\HL7.Utility\bin\Debug\NHapi.Base.xml
+D:\Concert_Care\POC\HL7Extraction\HL7.Utility\bin\Debug\NHapi.Model.V251.dll
+D:\Concert_Care\POC\HL7Extraction\HL7.Utility\bin\Debug\NHapi.Model.V251.xml

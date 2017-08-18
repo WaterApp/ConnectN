@@ -1,0 +1,9 @@
+C:\Users\HOME\Documents\GitHub\ConnectN\NurseAppAdmin.Extraction\obj\Debug\NurseAppAdmin.DataLayer.csprojResolveAssemblyReference.cache
+C:\Users\HOME\Documents\GitHub\ConnectN\NurseAppAdmin.Extraction\bin\Debug\NurseAppAdmin.DataModel.dll
+C:\Users\HOME\Documents\GitHub\ConnectN\NurseAppAdmin.Extraction\bin\Debug\NurseAppAdmin.Utility.dll
+C:\Users\HOME\Documents\GitHub\ConnectN\NurseAppAdmin.Extraction\bin\Debug\NurseAppAdmin.DataModel.pdb
+C:\Users\HOME\Documents\GitHub\ConnectN\NurseAppAdmin.Extraction\bin\Debug\NurseAppAdmin.Utility.pdb
+C:\Users\HOME\Documents\GitHub\ConnectN\NurseAppAdmin.Extraction\bin\Debug\NurseAppAdmin.DataLayer.dll
+C:\Users\HOME\Documents\GitHub\ConnectN\NurseAppAdmin.Extraction\bin\Debug\NurseAppAdmin.DataLayer.pdb
+C:\Users\HOME\Documents\GitHub\ConnectN\NurseAppAdmin.Extraction\obj\Debug\NurseAppAdmin.DataLayer.dll
+C:\Users\HOME\Documents\GitHub\ConnectN\NurseAppAdmin.Extraction\obj\Debug\NurseAppAdmin.DataLayer.pdb

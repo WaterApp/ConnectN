@@ -1,0 +1,7 @@
+C:\Users\HOME\Documents\GitHub\ConnectN\NurseAppAdmin.Utility\bin\Debug\NurseAppAdmin.Utility.dll
+C:\Users\HOME\Documents\GitHub\ConnectN\NurseAppAdmin.Utility\bin\Debug\NurseAppAdmin.Utility.pdb
+C:\Users\HOME\Documents\GitHub\ConnectN\NurseAppAdmin.Utility\bin\Debug\NurseAppAdmin.DataModel.dll
+C:\Users\HOME\Documents\GitHub\ConnectN\NurseAppAdmin.Utility\bin\Debug\NurseAppAdmin.DataModel.pdb
+C:\Users\HOME\Documents\GitHub\ConnectN\NurseAppAdmin.Utility\obj\Debug\NurseAppAdmin.Utility.csprojResolveAssemblyReference.cache
+C:\Users\HOME\Documents\GitHub\ConnectN\NurseAppAdmin.Utility\obj\Debug\NurseAppAdmin.Utility.dll
+C:\Users\HOME\Documents\GitHub\ConnectN\NurseAppAdmin.Utility\obj\Debug\NurseAppAdmin.Utility.pdb

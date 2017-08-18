@@ -1,4 +1,0 @@
-D:\Connect N\SourceCode\ConnectNAPI.Model\bin\Debug\ConnectNAPI.DataModel.dll
-D:\Connect N\SourceCode\ConnectNAPI.Model\bin\Debug\ConnectNAPI.DataModel.pdb
-D:\Connect N\SourceCode\ConnectNAPI.Model\obj\Debug\ConnectNAPI.DataModel.dll
-D:\Connect N\SourceCode\ConnectNAPI.Model\obj\Debug\ConnectNAPI.DataModel.pdb

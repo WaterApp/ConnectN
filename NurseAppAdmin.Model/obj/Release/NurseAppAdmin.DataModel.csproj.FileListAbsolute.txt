@@ -1,0 +1,5 @@
+C:\Users\HOME\Documents\GitHub\ConnectN\NurseAppAdmin.Model\bin\Release\NurseAppAdmin.DataModel.dll
+C:\Users\HOME\Documents\GitHub\ConnectN\NurseAppAdmin.Model\bin\Release\NurseAppAdmin.DataModel.pdb
+C:\Users\HOME\Documents\GitHub\ConnectN\NurseAppAdmin.Model\obj\Release\NurseAppAdmin.DataModel.csprojResolveAssemblyReference.cache
+C:\Users\HOME\Documents\GitHub\ConnectN\NurseAppAdmin.Model\obj\Release\NurseAppAdmin.DataModel.dll
+C:\Users\HOME\Documents\GitHub\ConnectN\NurseAppAdmin.Model\obj\Release\NurseAppAdmin.DataModel.pdb
